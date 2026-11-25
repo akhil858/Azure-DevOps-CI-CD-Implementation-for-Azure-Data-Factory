@@ -31,7 +31,7 @@ steps:
   inputs:
     command: 'custom'
     workingDir: '$(Build.Repository.LocalPath)'
-    customCommand: 'run build validate $(Build.Repository.LocalPath)/ /subscriptions/$(SubscriptionId)/resourceGroups/$(ResourceGroup)/providers/Microsoft.DataFactory/factories/$(DataFactory)'
+    customCommand: 'run build validate $(Build.Repository.LocalPath)/ /subscriptions/${{ parameters.SubscriptionId }}/resourceGroups/${{ parameters.ResourceGroup }}/providers/Microsoft.DataFactory/factories/${{ parameters.DataFactory }}'
   displayName: 'Validate'
 
 # Validate and then generate the ARM template
@@ -39,8 +39,7 @@ steps:
   inputs:
     command: 'custom'
     workingDir: '$(Build.Repository.LocalPath)'
-    customCommand: 'run build validate $(Build.Repository.LocalPath)/ /subscriptions/$(SubscriptionId)/resourceGroups/$(ResourceGroup)/providers/Microsoft.DataFactory/factories/$(DataFactory) "ArmTemplate"'
-
+    customCommand: 'run build export $(Build.Repository.LocalPath)/ /subscriptions/${{ parameters.SubscriptionId }}/resourceGroups/${{ parameters.ResourceGroup }}/providers/Microsoft.DataFactory/factories/${{ parameters.DataFactory }} "ArmTemplate"'
   displayName: 'Validate and Generate ARM template'
 
 
