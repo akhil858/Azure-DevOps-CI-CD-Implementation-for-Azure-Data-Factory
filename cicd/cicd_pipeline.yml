@@ -5,7 +5,7 @@ pool:
   vmImage: "ubuntu-latest"
  
 
- stages:
+stages:
 - stage: BuildARMTemplate
   displayName: "Build ARM Template"
 
