@@ -1,0 +1,16 @@
+{
+	"name": "adfdevakhil",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true,
+			"isExplicitlySet": false
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "32a72702-c886-4ae7-8849-dd0afb0f507e",
+		"tenantId": "ffd33b94-addc-4e77-b250-7a9ad0e03cf6"
+	}
+}
