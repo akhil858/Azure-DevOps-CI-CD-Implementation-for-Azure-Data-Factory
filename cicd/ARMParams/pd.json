@@ -3,13 +3,13 @@
 	"contentVersion": "1.0.0.0",
 	"parameters": {
 		"factoryName": {
-			"value": "adfpdakhil"
+			"value": "adfprodakhil"
 		},
 		"AzureKeyVault1_properties_typeProperties_baseUrl": {
-			"value": "https://keyvaultpdakhil.vault.azure.net/"
+			"value": "https://keyvaultprodakhil.vault.azure.net/"
 		},
 		"ls_adls_properties_typeProperties_url": {
-			"value": "https://storagepdakhil.dfs.core.windows.net/"
+			"value": "https://storageprodakhil.dfs.core.windows.net/"
 		},
 		"ls_http_properties_typeProperties_url": {
 			"value": "https://raw.githubusercontent.com/"
