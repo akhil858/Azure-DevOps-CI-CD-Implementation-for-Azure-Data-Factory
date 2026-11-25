@@ -6,7 +6,6 @@ pool:
  
 
  stages:
-
 - stage: BuildARMTemplate
   displayName: "Build ARM Template"
 
