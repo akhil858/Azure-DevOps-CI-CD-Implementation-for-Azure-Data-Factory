@@ -7,13 +7,12 @@ pool:
 
  stages:
 
-# Build ARM Template
 - stage: BuildARMTemplate
   displayName: "Build ARM Template"
 
 
   variables:
-  group: devgroup
+  - group: devgroup
 
 
   jobs:
