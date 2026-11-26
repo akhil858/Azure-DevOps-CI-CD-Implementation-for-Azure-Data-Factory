@@ -137,11 +137,3 @@ npm install
 ```
 
 The pipeline uses the package script to run the Microsoft ADF utilities for validation and ARM template export.
-
-## Configuration and Security Notes
-
-- The ARM parameter files contain environment-specific resource names and endpoints. Update them to match your Azure setup before deployment.
-- Keep credentials and secrets out of the repository. Store sensitive values in Azure DevOps secret variables or Azure Key Vault.
-- The deployment YAML specifies `canadacentral` as the ARM deployment location; change it if your deployment requires a different location.
-- The `pd` environment provides a place to configure production checks. Configure approvers in Azure DevOps to enforce an approval gate.
-- The daily trigger definition is stopped and currently has no pipeline association. Configure and enable it in ADF if you want it to run.
